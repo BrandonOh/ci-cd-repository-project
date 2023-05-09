@@ -6,7 +6,7 @@ services:
     #   context: .
     #   dockerfile: Dockerfile
     command:   gunicorn doguide.wsgi:application --bind 0.0.0.0:7000
-    image: manulangat/auto-deploy-do-github-actions:latest
+    image: iridescentoctopus/ci-cd-project:latest
     ports:
       - "7000:7000"
     env_file:
