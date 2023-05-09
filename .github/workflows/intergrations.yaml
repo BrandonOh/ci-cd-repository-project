@@ -36,7 +36,7 @@ jobs:
       - name: stop containers
         run: docker-compose -f docker-compose.yaml down --volumes
 
-      - name: Executing remote command and deployment to digital ocean for dev environment
+      - name: Executing remote  command and deployment to digital ocean for dev enviroment
         uses: appleboy/ssh-action@master
         with:
           host: "67.205.177.75"
