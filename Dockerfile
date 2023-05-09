@@ -9,10 +9,10 @@ RUN mkdir $APP_HOME/staticfiles
 WORKDIR $APP_HOME
 
 
-LABEL maintainer='manulangat1'
+LABEL maintainer='iridescentoctopus'
 
 
-LABEL description="This is an application that shows how to create an automatic ci pipepline that deploys the django app to a digital ocean droplet" 
+LABEL description="This is an application that shows how to create an automatic ci pipepline that deploys the django app to a digital ocean droplet based on the tutorial by manulangat1." 
 
 ENV PYTHONDONTWRITEBYTECODE=1
 
