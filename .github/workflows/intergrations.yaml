@@ -39,7 +39,7 @@ jobs:
       - name: Executing remote  command and deployment to digital ocean for dev enviroment
         uses: appleboy/ssh-action@master
         with:
-          host: "64.227.99.127"
+          host: "67.205.177.75"
           USERNAME: "root"
           PORT: 22
           KEY: ${{ secrets.DO_PRIVATE_KEY}}
