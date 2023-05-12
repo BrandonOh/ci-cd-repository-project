@@ -38,6 +38,13 @@ jobs:
 
       - name: Aqua Security Trivy
         uses: aquasecurity/trivy-action@0.10.0
+        with:
+          image-ref: 'iridescentoctopus/ci-cd-project:latest'
+          format: 'sarif'
+          output: 'trivy-results.sarif'
+        env:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Executing remote  command and deployment to digital ocean for dev enviroment
         uses: appleboy/ssh-action@master
