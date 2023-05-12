@@ -36,6 +36,9 @@ jobs:
       - name: stop containers
         run: docker-compose -f docker-compose.yaml down --volumes
 
+      - name: Aqua Security Trivy
+        uses: aquasecurity/trivy-action@0.10.0
+
       - name: Executing remote  command and deployment to digital ocean for dev enviroment
         uses: appleboy/ssh-action@master
         with:
