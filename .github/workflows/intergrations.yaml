@@ -37,7 +37,7 @@ jobs:
         uses: aquasecurity/trivy-action@0.10.0
         with:
           image-ref: 'iridescentoctopus/ci-cd-project:latest'
-          format: 'json'
+          format: 'table'
           exit-code: '1'
           ignore-unfixed: true
           vuln-type: 'os,library'
