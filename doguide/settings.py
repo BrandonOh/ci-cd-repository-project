@@ -54,7 +54,7 @@ ROOT_URLCONF = 'doguide.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['../ci-cd-repository-project/myapp/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
